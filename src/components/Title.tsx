@@ -7,7 +7,7 @@ interface TitleProps {
 }
 
 const TitleStyle = styled.h3<TitleProps>`
-  color: #282a35;
+  color: ${(props) => props.theme.primaryColor};
   font-size: ${({ fontSize }) => fontSize || '14px'};
   font-weight: bold;
   margin-bottom: 16px;

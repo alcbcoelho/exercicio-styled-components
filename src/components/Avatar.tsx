@@ -2,7 +2,8 @@ import styled from 'styled-components';
 
 const AvatarStyle = styled.img`
   border-radius: 50%;
-  max-width: 100%;
+  width: 128px;
+  height: 128px;
   margin-bottom: 24px;
 `;
 

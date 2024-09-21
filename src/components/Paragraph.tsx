@@ -7,7 +7,8 @@ interface ParagraphProps {
 }
 
 export const ParagraphStyle = styled.p<ParagraphProps>`
-  color: ${({ isSecondary }) => (isSecondary ? '#949494' : '#282a35')};
+  color: ${(props) =>
+    props.isSecondary ? props.theme.secondaryColor : props.theme.primaryColor};
   font-size: ${({ fontSize }) => fontSize || '14px'};
   line-height: 22px;
 `;

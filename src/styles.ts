@@ -10,6 +10,7 @@ const GlobalStyles = createGlobalStyle`
   }
 
   body {
+    background-color: ${(props) => props.theme.backgroundColor};
     padding: 80px 0;
 
     @media screen and (max-width: 767px) {

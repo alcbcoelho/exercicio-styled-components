@@ -3,14 +3,18 @@ import Avatar from '../components/Avatar';
 import Paragraph, { ParagraphStyle } from '../components/Paragraph';
 import styled from 'styled-components';
 
+interface SidebarProps {
+  changeTheme: () => void;
+}
+
 const Description = styled(ParagraphStyle)`
   margin-top: 24px;
   margin-bottom: 40px;
 `;
 
 const ThemeButton = styled.button`
-  background-color: #282a35;
-  color: #eee;
+  background-color: ${(props) => props.theme.primaryColor};
+  color: ${(props) => props.theme.backgroundColor};
   font-size: 10px;
   font-weight: bold;
   padding: 8px;
@@ -23,9 +27,14 @@ const SidebarContainer = styled.div`
   position: sticky;
   top: 80px;
   left: 0;
+
+  @media screen and (max-width: 767px) {
+    margin-bottom: 40px;
+    text-align: center;
+  }
 `;
 
-export default function Sidebar() {
+export default function Sidebar({ changeTheme }: SidebarProps) {
   return (
     <aside>
       <SidebarContainer>
@@ -37,7 +46,7 @@ export default function Sidebar() {
           alcbcoelho
         </Paragraph>
         <Description fontSize="12px">Engenheiro front-end</Description>
-        <ThemeButton>Trocar tema</ThemeButton>
+        <ThemeButton onClick={changeTheme}>Trocar tema</ThemeButton>
       </SidebarContainer>
     </aside>
   );

@@ -8,10 +8,10 @@ const GitHubStatBox = styled.div`
 
   img {
     height: 157px;
-    width: 100%;
 
     @media screen and (max-width: 575px) {
-      height: initial;
+      height: auto;
+      width: 100%;
     }
   }
 `;

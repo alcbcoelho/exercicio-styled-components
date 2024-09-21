@@ -3,14 +3,14 @@ import Title from './Title';
 import Paragraph from './Paragraph';
 
 const CardStyle = styled.div`
-  border: 1px #c1c1c1 solid;
+  border: 1px ${(props) => props.theme.borderColor} solid;
   padding: 16px;
 `;
 
 const CardButton = styled.a`
   display: inline-block;
-  background-color: #4476bf;
-  color: #fff;
+  background-color: ${(props) => props.theme.cardButtonBackgroundColor};
+  color: ${(props) => props.theme.backgroundColor};
   text-decoration: none;
   font-size: 14px;
   margin-top: 24px;
