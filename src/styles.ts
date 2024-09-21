@@ -10,7 +10,7 @@ const GlobalStyles = createGlobalStyle`
   }
 
   body {
-    padding-top: 80px;
+    padding: 80px 0;
 
     @media screen and (max-width: 767px) {
       padding-top: 16px;
@@ -25,10 +25,6 @@ const Container = styled.div`
   display: grid;
   grid-template-columns: 128px auto;
   column-gap: 56px;
-
-  img {
-    max-width: 100%;
-  }
 
   @media screen and (max-width: 767px) {
     max-width: 80%;

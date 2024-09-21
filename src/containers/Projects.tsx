@@ -34,6 +34,42 @@ export default function Projects() {
         <li>
           <ProjectCard />
         </li>
+        <li>
+          <ProjectCard />
+        </li>
+        <li>
+          <ProjectCard />
+        </li>
+        <li>
+          <ProjectCard />
+        </li>
+        <li>
+          <ProjectCard />
+        </li>
+        <li>
+          <ProjectCard />
+        </li>
+        <li>
+          <ProjectCard />
+        </li>
+        <li>
+          <ProjectCard />
+        </li>
+        <li>
+          <ProjectCard />
+        </li>
+        <li>
+          <ProjectCard />
+        </li>
+        <li>
+          <ProjectCard />
+        </li>
+        <li>
+          <ProjectCard />
+        </li>
+        <li>
+          <ProjectCard />
+        </li>
       </ProjectContainer>
     </section>
   );
